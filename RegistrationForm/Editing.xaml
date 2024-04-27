@@ -9,10 +9,10 @@
       Title="Editing">
 
     <Grid Background="#FFE2CEA2">
-        <TextBox x:Name="ChangeableDescrip" TextWrapping="Wrap" Text="Текст прекрасной статьи про пипидастры" Margin="82,107,123,196" FontSize="15" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700"/>
-        <TextBox x:Name="ChangeCommet" TextWrapping="Wrap" Text="Комментарий к изменениям" Margin="82,282,241,118" FontSize="15" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700"/>
-        <Button x:Name="SendChanges" Content="Отправить" Margin="452,357,123,45" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
-        <Button x:Name="ToArticles" Content="К статьям" Margin="82,32,493,370" Click="Button_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
+        <TextBox x:Name="ChangeableDescrip" TextWrapping="Wrap" Text="Текст прекрасной статьи про пипидастры" Margin="82,107,123,196" FontSize="15" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700" MaxLength="200"/>
+        <TextBox x:Name="ChangeCommet" TextWrapping="Wrap" Text="Комментарий к изменениям" Margin="82,282,241,118" FontSize="15" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700" MaxLength="200"/>
+        <Button x:Name="SendChanges" Content="Отправить" Margin="452,357,123,45" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14" Click="SendChanges_Click"/>
+        <Button x:Name="ToArticle" Content="К статье" Margin="82,32,493,370" Click="Button_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
 
     </Grid>
 </Page>

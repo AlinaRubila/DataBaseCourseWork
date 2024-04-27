@@ -18,9 +18,9 @@
             </TextBlock.Background>
         </TextBlock>
         <ListBox x:Name="Comments" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,347,55,10" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816"/>
-        <TextBox x:Name="CommentBox" TextWrapping="Wrap" Text="Оставьте свой комментарий" Margin="55,256,321,153" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700"/>
+        <TextBox x:Name="CommentBox" TextWrapping="Wrap" Text="Оставьте свой комментарий" Margin="55,256,321,153" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700" MaxLength="200"/>
         <Button Name="AnyMistake" Content="Нашли ошибку в тексте?" Margin="588,38,31,371" Click="AnyMistake_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
-        <Button x:Name="SendComment" Content="Отправить" Margin="374,302,321,125" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
+        <Button x:Name="SendComment" Content="Отправить" Margin="374,302,321,125" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14" Click="SendComment_Click"/>
 
     </Grid>
 </Page>

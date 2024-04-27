@@ -15,19 +15,26 @@ using System.Windows.Shapes;
 
 namespace RegistrationForm
 {
-    /// <summary>
-    /// Логика взаимодействия для Editing.xaml
-    /// </summary>
     public partial class Editing : Page
     {
+        EditingDB editingDB = new EditingDB();
         public Editing()
         {
             InitializeComponent();
+            ChangeableDescrip.Text = CurrentArticleInfo.Text;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Homepage());
+            NavigationService.GoBack();
+        }
+
+        private void SendChanges_Click(object sender, RoutedEventArgs e)
+        {
+            if (ChangeCommet.Text.Trim().Length > 1 && ChangeableDescrip.Text.Trim().Length > 5)
+            {
+                editingDB.SendEdit(ChangeCommet.Text, ChangeableDescrip.Text);
+            }
         }
     }
 }

@@ -27,6 +27,7 @@ namespace RegistrationForm
             InitializeComponent();
             tagsList = homedb.ListOfTags();
             articlesList = homedb.ListOfArticles();
+            //SearchField.Text = $"{DateTime.UtcNow}";
             for (int i = 0; i < tagsList.Length; i++) {Tags.Items.Add(tagsList[i]);}
             for (int i = 0; i < articlesList.Length; i++) { Articles.Items.Add(articlesList[i]); }
         }

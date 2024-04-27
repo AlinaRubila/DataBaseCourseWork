@@ -17,21 +17,31 @@ namespace RegistrationForm
 {
     public partial class Article : Page
     {
+        CommentingDB commentDB = new CommentingDB();
         public Article()
         {
             InitializeComponent();
             Header.Text = CurrentArticleInfo.Name;
-            Description.Text = $"{ CurrentArticleInfo.Text}\n{CurrentArticleInfo.LastEdit}";
+            Description.Text = $"{ CurrentArticleInfo.Text}\n\nПоследняя правка: {CurrentArticleInfo.LastEdit}";
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
+            CurrentArticleInfo.Clear();
             NavigationService.GoBack();
         }
 
         private void AnyMistake_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Editing());
+        }
+
+        private void SendComment_Click(object sender, RoutedEventArgs e)
+        {
+            if (CommentBox.Text.Trim().Length > 0) 
+            {
+                commentDB.AddComment(CommentBox.Text);
+            }
         }
     }
 }

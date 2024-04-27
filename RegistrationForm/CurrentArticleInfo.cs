@@ -13,5 +13,9 @@ namespace RegistrationForm
         public static string Name = "";
         public static string Text = "";
         public static string PicturePath = "";
+        public static void Clear()
+        {
+            ID = 0; LastEdit = null; Name = ""; Text = ""; PicturePath = "";
+        }
     }
 }
