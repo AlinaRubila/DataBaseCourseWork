@@ -1,0 +1,21 @@
+﻿<Page x:Class="RegistrationForm.Homepage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RegistrationForm"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Homepage">
+
+    <Grid Background="#FF42D575">
+        <TextBlock Name="Greeting" TextWrapping="Wrap" Text="Альманах Plants VS Zombies" Margin="336,28,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Width="464" Height="45" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FFBBFF00" FontStyle="Italic" FontWeight="Bold"/>
+        <ListBox Name="Tags" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="41,127,498,54" BorderBrush="#FFEBCA83" FontFamily="Comic Sans MS" Background="#FFEBCA83" Foreground="#FF553E0B" FontSize="14" SelectionChanged="Tags_SelectionChanged"/>
+        <ListBox Name="Articles" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="343,127,40,54" BorderBrush="#FFEBCA83" FontFamily="Comic Sans MS" Background="#FFEBCA83" Foreground="#FF553E0B" FontSize="14" SelectionChanged="Articles_SelectionChanged"/>
+        <TextBox x:Name="SearchField" TextWrapping="Wrap" Text="введите запрос" Margin="466,85,40,338" BorderBrush="#FF8A6E2E" ToolTip="Введите запрос" FontFamily="Comic Sans MS" Background="#FFE3D4B2" FontStyle="Italic" Foreground="#FF8A6E2E" SelectionBrush="#FFC5D700" TextChanged="SearchField_TextChanged"/>
+        <TextBlock TextWrapping="Wrap" Text="Теги" Margin="41,87,528,341" FontSize="16" FontFamily="Comic Sans MS" Foreground="#FF015C20"/>
+        <TextBlock TextWrapping="Wrap" Text="Статьи" Margin="342,87,384,331" FontSize="16" FontFamily="Comic Sans MS" Foreground="#FF015C20"/>
+        <Button Name="ToProfile" Content="Профиль" Margin="41,32,609,373" Click="ToProfile_Click" FontFamily="Comic Sans MS" Background="#FFEBCA83" BorderBrush="#FFEBCA83" Foreground="#FF553E0B" FontSize="14"/>
+
+    </Grid>
+</Page>

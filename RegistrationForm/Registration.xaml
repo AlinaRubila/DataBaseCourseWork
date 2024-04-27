@@ -1,0 +1,23 @@
+﻿<Page x:Class="RegistrationForm.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RegistrationForm"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Registration">
+
+    <Grid Background="#FF79B88F">
+        <TextBox Name="UserName" TextWrapping="Wrap"  Margin="293,142,293,274" FontFamily="Comic Sans MS" Background="#FFC0DECA" FontSize="14" BorderBrush="#FFC0DECA" Foreground="#FF176030" SelectionBrush="#FFDAB10A"/>
+        <TextBox Name="Login" TextWrapping="Wrap"  Margin="293,191,293,225" FontFamily="Comic Sans MS" Background="#FFC0DECA" FontSize="14" BorderBrush="#FFC0DECA" Foreground="#FF176030" SelectionBrush="#FFDAB10A"/>
+        <Button x:Name="EnterHomepage" Margin="282,312,282,106" Content="Зарегистрироваться" Click="EnterHomepage_Click" FontFamily="Comic Sans MS" Background="#FFE9D09A" FontSize="14" BorderBrush="#FFE9D09A" Foreground="#FF694D10"/>
+        <TextBlock TextWrapping="Wrap" Text="Имя пользователя" Margin="182,137,0,0" HorizontalAlignment="Left" Width="106" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="14" Foreground="#FF0C4B22"/>
+        <TextBlock TextWrapping="Wrap" Text="Логин" Margin="234,200,0,0" HorizontalAlignment="Left" Width="54" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="14" Foreground="#FF0C4B22"/>
+        <TextBlock TextWrapping="Wrap" Text="Пароль" Margin="235,250,0,0" HorizontalAlignment="Left" Width="54" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="14" Foreground="#FF0C4B22"/>
+        <PasswordBox Name="Password" Margin="294,243,293,173" FontFamily="Comic Sans MS" Background="#FFC0DECA" FontSize="14" BorderBrush="#FFC0DECA" Foreground="#FF176030" SelectionBrush="#FFDAB10A"/>
+        <TextBlock Name="WarningText" TextWrapping="Wrap" Text="" Margin="252,282,252,139" Foreground="#FFB42727" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Back" Margin="26,41,565,377" Content="Назад"  FontFamily="Comic Sans MS" Background="#FFE9D09A" FontSize="14" BorderBrush="#FFE9D09A" Foreground="#FF694D10" Click="Back_Click"/>
+
+    </Grid>
+</Page>
