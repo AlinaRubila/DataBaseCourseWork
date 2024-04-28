@@ -10,7 +10,7 @@
 
     <Grid Background="#FFE2CEA2">
         <Button Name="Back" Content="Назад" Margin="28,38,612,373" Click="Back_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
-        <Image Margin="524,114,19,204"/>
+        <Image x:Name="Picture" Source="pictures/sunflower.png" Margin="524,114,19,204"/>
         <TextBlock x:Name="Header" TextWrapping="Wrap" Text="Заголовок" Margin="264,85,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS" Foreground="#FF4E390D"/>
         <TextBlock x:Name="Description" TextWrapping="Wrap" Text="Текст про замечательные-замечательные пипидастры, которые могли бы вам обеспечить хорошее настроение" Margin="55,118,294,208" FontSize="15" FontFamily="Comic Sans MS" Foreground="#FF4E390D">
             <TextBlock.Background>

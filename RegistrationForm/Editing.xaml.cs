@@ -34,6 +34,7 @@ namespace RegistrationForm
             if (ChangeCommet.Text.Trim().Length > 1 && ChangeableDescrip.Text.Trim().Length > 5)
             {
                 editingDB.SendEdit(ChangeCommet.Text, ChangeableDescrip.Text);
+                Info.Text = "Сохранено";
             }
         }
     }

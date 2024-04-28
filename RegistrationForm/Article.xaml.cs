@@ -21,8 +21,10 @@ namespace RegistrationForm
         public Article()
         {
             InitializeComponent();
+            Picture.Source = new BitmapImage(new Uri($"pictures/{CurrentArticleInfo.PicturePath}.png", UriKind.Relative));
             Header.Text = CurrentArticleInfo.Name;
-            Description.Text = $"{ CurrentArticleInfo.Text}\n\nПоследняя правка: {CurrentArticleInfo.LastEdit}";
+            if (CurrentArticleInfo.LastEdit != null) { Description.Text = $"{CurrentArticleInfo.Text}\n\nПоследняя правка: {CurrentArticleInfo.LastEdit}"; }
+            else {Description.Text = $"{CurrentArticleInfo.Text}";}
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

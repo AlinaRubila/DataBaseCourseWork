@@ -8,7 +8,208 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pictures\blover.png" />
+    <None Remove="pictures\cabbagepult.png" />
+    <None Remove="pictures\cactus.png" />
+    <None Remove="pictures\cattail.png" />
+    <None Remove="pictures\cherry_bomb.png" />
+    <None Remove="pictures\chomper.png" />
+    <None Remove="pictures\cob_cannon.png" />
+    <None Remove="pictures\coffee_bean.png" />
+    <None Remove="pictures\doomshroom.png" />
+    <None Remove="pictures\flower_pot.png" />
+    <None Remove="pictures\fumeshroom.png" />
+    <None Remove="pictures\garlic.png" />
+    <None Remove="pictures\gatling_pea.png" />
+    <None Remove="pictures\gloomshroom.png" />
+    <None Remove="pictures\gold_magnet.png" />
+    <None Remove="pictures\grave_buster.png" />
+    <None Remove="pictures\hypnoshroom.png" />
+    <None Remove="pictures\iceshroom.png" />
+    <None Remove="pictures\jalapeno.png" />
+    <None Remove="pictures\kernelpult.png" />
+    <None Remove="pictures\lily_pad.png" />
+    <None Remove="pictures\magnetshroom.png" />
+    <None Remove="pictures\marygold.png" />
+    <None Remove="pictures\melonpult.png" />
+    <None Remove="pictures\peashooter.png" />
+    <None Remove="pictures\plantern.png" />
+    <None Remove="pictures\potato_mine.png" />
+    <None Remove="pictures\puffshroom.png" />
+    <None Remove="pictures\pumpkin.png" />
+    <None Remove="pictures\repeater.png" />
+    <None Remove="pictures\scaredyshroom.png" />
+    <None Remove="pictures\seashroom.png" />
+    <None Remove="pictures\snow_pea.png" />
+    <None Remove="pictures\spikerock.png" />
+    <None Remove="pictures\spikeweed.png" />
+    <None Remove="pictures\split_pea.png" />
+    <None Remove="pictures\squash.png" />
+    <None Remove="pictures\starfruit.png" />
+    <None Remove="pictures\sunflower.png" />
+    <None Remove="pictures\sunshroom.png" />
+    <None Remove="pictures\tallnut.png" />
+    <None Remove="pictures\tangle_kelp.png" />
+    <None Remove="pictures\threepeater.png" />
+    <None Remove="pictures\torchwood.png" />
+    <None Remove="pictures\twin_sunflower.png" />
+    <None Remove="pictures\umbrella_leaf.png" />
+    <None Remove="pictures\wallnut.png" />
+    <None Remove="pictures\winter_melon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pictures\kernelpult.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pictures\blover.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\cabbagepult.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\cactus.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\cattail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\cherry_bomb.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\chomper.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\cob_cannon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\coffee_bean.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\doomshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\flower_pot.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\fumeshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\garlic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\gatling_pea.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\gloomshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\gold_magnet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\grave_buster.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\hypnoshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\iceshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\jalapeno.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\lily_pad.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\magnetshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\marygold.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\melonpult.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\peashooter.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\plantern.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\potato_mine.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\puffshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\pumpkin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\repeater.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\scaredyshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\seashroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\snow_pea.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\spikerock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\spikeweed.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\split_pea.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\squash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\starfruit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\sunflower.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\sunshroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\tallnut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\tangle_kelp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\threepeater.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\torchwood.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\twin_sunflower.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\umbrella_leaf.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\wallnut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pictures\winter_melon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
