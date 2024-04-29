@@ -18,13 +18,19 @@ namespace RegistrationForm
     public partial class Article : Page
     {
         CommentingDB commentDB = new CommentingDB();
+        List<Comment> comments;
         public Article()
         {
             InitializeComponent();
             Picture.Source = new BitmapImage(new Uri($"pictures/{CurrentArticleInfo.PicturePath}.png", UriKind.Relative));
+            comments = commentDB.GetComments(CurrentArticleInfo.ID);
+            if (comments.Count > 0)
+            {
+                Comments.ItemsSource = comments;
+            }
             Header.Text = CurrentArticleInfo.Name;
             if (CurrentArticleInfo.LastEdit != null) { Description.Text = $"{CurrentArticleInfo.Text}\n\nПоследняя правка: {CurrentArticleInfo.LastEdit}"; }
-            else {Description.Text = $"{CurrentArticleInfo.Text}";}
+            else  if (CurrentArticleInfo.LastEdit == null) {Description.Text = $"{CurrentArticleInfo.Text}";}
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -43,6 +49,8 @@ namespace RegistrationForm
             if (CommentBox.Text.Trim().Length > 0) 
             {
                 commentDB.AddComment(CommentBox.Text);
+                comments = commentDB.GetComments(CurrentArticleInfo.ID);
+                Comments.ItemsSource = comments;
             }
         }
     }

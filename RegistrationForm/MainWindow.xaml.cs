@@ -20,6 +20,7 @@ namespace RegistrationForm
         public MainWindow()
         {
             InitializeComponent();
+            //Icon = new BitmapImage(new Uri($"pictures/icon.png", UriKind.Relative));;
             MainFrame.Content = new Page1();
         }
     }

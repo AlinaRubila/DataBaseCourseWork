@@ -10,17 +10,33 @@
 
     <Grid Background="#FFE2CEA2">
         <Button Name="Back" Content="Назад" Margin="28,38,612,373" Click="Back_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
-        <Image x:Name="Picture" Source="pictures/sunflower.png" Margin="524,114,19,204"/>
+        <Image x:Name="Picture" Source="pictures/sunflower.png" Margin="636,99,30,219"/>
         <TextBlock x:Name="Header" TextWrapping="Wrap" Text="Заголовок" Margin="264,85,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS" Foreground="#FF4E390D"/>
         <TextBlock x:Name="Description" TextWrapping="Wrap" Text="Текст про замечательные-замечательные пипидастры, которые могли бы вам обеспечить хорошее настроение" Margin="55,118,294,208" FontSize="15" FontFamily="Comic Sans MS" Foreground="#FF4E390D">
             <TextBlock.Background>
                 <SolidColorBrush Color="#FFF6F6F6" Opacity="0"/>
             </TextBlock.Background>
         </TextBlock>
-        <ListBox x:Name="Comments" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,347,55,10" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816"/>
+        <ListBox x:Name="Comments" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalContentAlignment="Stretch" Margin="55,347,55,10" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816">
+        <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90" />
+                            <ColumnDefinition Width="98" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Username}" Foreground="#FF107821" FontWeight="Bold" FontSize="10" />
+                        <TextBlock Grid.Column="1" Text="{Binding Date}" Foreground="#FFA39370" FontStyle="Italic" FontSize="10" />
+                        <TextBlock Grid.Column="2" Text="{Binding Text}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <TextBox x:Name="CommentBox" TextWrapping="Wrap" Text="Оставьте свой комментарий" Margin="55,256,321,153" Background="#FFFAEFD6" FontFamily="Comic Sans MS" Foreground="#FF5F4816" SelectionBrush="#FF1FD700" MaxLength="200"/>
-        <Button Name="AnyMistake" Content="Нашли ошибку в тексте?" Margin="588,38,31,371" Click="AnyMistake_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
-        <Button x:Name="SendComment" Content="Отправить" Margin="374,302,321,125" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14" Click="SendComment_Click"/>
+        <Button Name="AnyMistake" Content="Нашли ошибку в тексте?" Margin="579,38,31,371" Click="AnyMistake_Click" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14"/>
+        <Button x:Name="SendComment" Content="Отправить" Margin="484,266,211,162" Background="#FFB09A65" FontFamily="Comic Sans MS" Foreground="#FF402F05" BorderBrush="#FFB09A65" FontSize="14" Click="SendComment_Click"/>
+        <TextBlock x:Name="CommentSection" TextWrapping="Wrap" Text="Комментарии" Margin="58,314,0,0" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS" Foreground="#FF4E390D"/>
 
     </Grid>
 </Page>

@@ -212,4 +212,10 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="pictures\icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
