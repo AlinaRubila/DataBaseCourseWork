@@ -31,10 +31,11 @@ namespace RegistrationForm
 
         private void SendChanges_Click(object sender, RoutedEventArgs e)
         {
-            if (ChangeCommet.Text.Trim().Length > 1 && ChangeableDescrip.Text.Trim().Length > 5)
+            if (ChangeableDescrip.Text.Trim().Length > 5 && ChangeableDescrip.Text != CurrentArticleInfo.Text)
             {
                 editingDB.SendEdit(ChangeCommet.Text, ChangeableDescrip.Text);
                 Info.Text = "Сохранено";
+                CurrentArticleInfo.Text = ChangeableDescrip.Text;
             }
         }
     }

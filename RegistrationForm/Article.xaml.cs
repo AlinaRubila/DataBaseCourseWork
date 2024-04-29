@@ -51,6 +51,7 @@ namespace RegistrationForm
                 commentDB.AddComment(CommentBox.Text);
                 comments = commentDB.GetComments(CurrentArticleInfo.ID);
                 Comments.ItemsSource = comments;
+                CommentBox.Text = "";
             }
         }
     }

@@ -26,7 +26,7 @@ namespace RegistrationForm
         {
             List<Comment> comments = new List<Comment>();
             connection.con.Open();
-            request = $"SELECT Date, Text, Username FROM comments JOIN users ON users.ID=comments.users_ID WHERE comments.articles_ID={artID}";
+            request = $"SELECT Date, Text, Username FROM comments JOIN users ON users.ID=comments.users_ID WHERE comments.articles_ID={artID} ORDER BY comments.ID ASC";
             command.Connection = connection.con;
             command.CommandText = request;
             MySqlDataReader reader = command.ExecuteReader();
