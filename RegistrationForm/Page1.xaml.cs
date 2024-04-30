@@ -19,19 +19,10 @@ namespace RegistrationForm
     {
         Authorization authorization = new Authorization();
         Registration registration = new Registration();
-        public Page1()
-        {
-            InitializeComponent();
-        }
-
+        public Page1() { InitializeComponent(); }
         private void Autho_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(authorization);
-        }
-
+        {NavigationService.Navigate(authorization);}
         private void Register_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(registration);
-        }
+        {NavigationService.Navigate(registration);}
     }
 }

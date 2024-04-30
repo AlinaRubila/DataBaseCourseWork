@@ -18,9 +18,9 @@ namespace RegistrationForm
 {
     public partial class Registration : Page
     {
-        public Registration() { InitializeComponent(); }
         Homepage homepage = new Homepage();
         RegisterDB register = new RegisterDB();
+        public Registration() { InitializeComponent(); }
         private void EnterHomepage_Click(object sender, RoutedEventArgs e)
         {
             WarningText.Text = "";
@@ -42,8 +42,6 @@ namespace RegistrationForm
             }
         }
         private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-        }
+        {NavigationService.GoBack();}
     }
 }

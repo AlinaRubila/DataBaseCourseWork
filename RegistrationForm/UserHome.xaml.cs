@@ -24,12 +24,8 @@ namespace RegistrationForm
             InitializeComponent();
             NameOfUser.Text = $"Профиль пользователя {CurrentUserInfo.Name}";
         }
-
         private void BackToHome_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(homepage);
-        }
-
+        {NavigationService.Navigate(homepage);}
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             CurrentUserInfo.Name = "";
@@ -37,20 +33,11 @@ namespace RegistrationForm
             CurrentUserInfo.ID = 0;
             NavigationService.Navigate(startpage);
         }
-
-        private void ChangeName_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ChangeName());
-        }
-
+        private void ChangeName_Click(object sender, RoutedEventArgs e) 
+        {NavigationService.Navigate(new ChangeName());}
         private void ChangeLogin_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ChangeLogin());
-        }
-
+        {NavigationService.Navigate(new ChangeLogin());}
         private void ChangePassword_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ChangePassword());
-        }
+        {NavigationService.Navigate(new ChangePassword());}
     }
 }

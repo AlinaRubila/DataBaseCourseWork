@@ -23,12 +23,8 @@ namespace RegistrationForm
             InitializeComponent();
             ChangeableDescrip.Text = CurrentArticleInfo.Text;
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-        }
-
+        {NavigationService.GoBack();}
         private void SendChanges_Click(object sender, RoutedEventArgs e)
         {
             if (ChangeableDescrip.Text.Trim().Length > 5 && ChangeableDescrip.Text != CurrentArticleInfo.Text)

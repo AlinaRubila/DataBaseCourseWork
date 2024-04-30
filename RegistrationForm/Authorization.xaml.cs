@@ -19,10 +19,10 @@ namespace RegistrationForm
 {
     public partial class Authorization : Page
     {
-        public Authorization() { InitializeComponent();}
         AuthDB auth = new AuthDB();
         Homepage homepage = new Homepage();
         bool loginStatus = false;
+        public Authorization() {InitializeComponent();}
         private void EnterHomepage_Click(object sender, RoutedEventArgs e)
         {
             string login = Login.Text.Trim();
@@ -37,8 +37,6 @@ namespace RegistrationForm
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-        }
+        {NavigationService.GoBack();}
     }
 }

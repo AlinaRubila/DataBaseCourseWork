@@ -18,39 +18,21 @@ namespace RegistrationForm
     public partial class ChangeLogin : Page
     { 
         ChangeLoginDB loginDB = new ChangeLoginDB();
-        public ChangeLogin()
-        {
-            InitializeComponent();
-        }
         string oldLogin = "";
         string newLogin = "";
+        public ChangeLogin() { InitializeComponent(); }
         private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-        }
-
+        {NavigationService.GoBack();}
         private void ChangeLog_Click(object sender, RoutedEventArgs e)
         {
             newLogin = NewLogin.Text.Trim();
             oldLogin = OldLogin.Text.Trim();
-            if (newLogin.Length < 5)
-            {
-                Warning.Text = "Логин должен состоять из 5 символов и больше";
-            }
-            else if (oldLogin != CurrentUserInfo.Login)
-            {
-                Warning.Text = "Неверный логин!";
-            }
+            if (newLogin.Length < 5) {Warning.Text = "Логин должен состоять из 5 символов и больше";}
+            else if (oldLogin != CurrentUserInfo.Login) {Warning.Text = "Неверный логин!";}
             else
             {
-                if (loginDB.ChangeL(newLogin) == false)
-                {
-                    Warning.Text = "Пользователь с таким логином уже существует!";
-                }
-                else
-                {
-                    Warning.Text = "Логин изменён успешно!";
-                }
+                if (loginDB.ChangeL(newLogin) == false) {Warning.Text = "Пользователь с таким логином уже существует!";}
+                else {Warning.Text = "Логин изменён успешно!";}
             }
         }
     }

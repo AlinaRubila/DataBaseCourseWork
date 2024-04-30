@@ -21,14 +21,8 @@ namespace RegistrationForm
             command.CommandText = request;
             truePass = Convert.ToString(command.ExecuteScalar());
             connection.con.Close();
-            if (password != truePass)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            if (password != truePass) {return false;}
+            else {return true;}
         }
         public void ChangeP(string password)
         {

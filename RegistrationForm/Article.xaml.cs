@@ -40,9 +40,7 @@ namespace RegistrationForm
         }
 
         private void AnyMistake_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Editing());
-        }
+        {NavigationService.Navigate(new Editing());}
 
         private void SendComment_Click(object sender, RoutedEventArgs e)
         {

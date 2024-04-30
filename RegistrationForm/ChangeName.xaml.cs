@@ -27,9 +27,7 @@ namespace RegistrationForm
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new UserHome());
-        }
+        {NavigationService.Navigate(new UserHome());}
 
         private void ChangeNam_Click(object sender, RoutedEventArgs e)
         {

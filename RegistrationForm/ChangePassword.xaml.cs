@@ -21,11 +21,9 @@ namespace RegistrationForm
         string oldPassword = "";
         string newPassword = "";
         string repeatPassword = "";
-        public ChangePassword() {InitializeComponent();}
+        public ChangePassword() { InitializeComponent(); }
         private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-        }
+        {NavigationService.GoBack();}
         private void ChangePass_Click(object sender, RoutedEventArgs e)
         {
             oldPassword = OldPassword.Password.Trim();

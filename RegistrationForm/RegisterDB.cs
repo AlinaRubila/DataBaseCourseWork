@@ -28,12 +28,13 @@ namespace RegistrationForm
             {
                 request = "SELECT COUNT(*) FROM users";
                 command.CommandText = request;
-                int count = Convert.ToInt32(command.ExecuteScalar());
-                request = $"INSERT INTO users (ID, Login, Password, Username) VALUES ({count + 1}, '{login}', '{password}', '{name}')";
+                int count = Convert.ToInt32(command.ExecuteScalar()) + 1;
+                request = $"INSERT INTO users (ID, Login, Password, Username) VALUES ({count}, '{login}', '{password}', '{name}')";
                 command.CommandText = request;
                 command.ExecuteNonQuery();
-                CurrentUserInfo.ID = count + 1;
+                CurrentUserInfo.ID = count;
                 CurrentUserInfo.Name = name;
+                CurrentUserInfo.Login = login;
                 connection.con.Close();
                 return true;
             }

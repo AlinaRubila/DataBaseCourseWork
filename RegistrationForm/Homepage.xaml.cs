@@ -30,12 +30,8 @@ namespace RegistrationForm
             for (int i = 0; i < tagsList.Length; i++) {Tags.Items.Add(tagsList[i]);}
             for (int i = 0; i < articlesList.Length; i++) { Articles.Items.Add(articlesList[i]); }
         }
-
         private void ToProfile_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new UserHome());
-        }
-
+        {NavigationService.Navigate(new UserHome());}
         private void SearchField_TextChanged(object sender, TextChangedEventArgs e)
         {
             searchRequest = SearchField.Text.Trim().ToLower();
